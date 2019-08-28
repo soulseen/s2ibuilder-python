@@ -6,12 +6,6 @@
 # For more information refer to the documentation:
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
-
-# If the 'python-builder' assemble script is executed with the '-h' flag, print the usage.
-if [[ "$1" == "-h" ]]; then
-	exec /usr/libexec/s2i/usage
-fi
-
 set -e
 
 echo "---> Installing application source ..."
